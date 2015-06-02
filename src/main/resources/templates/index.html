@@ -1,0 +1,21 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<table>
+      <tr th:each="url : ${urls}">
+        <td th:text="${url}">001</td>
+      </tr>
+    </table>
+	<form action="#" th:action="@{/}" method="post" th:object="${msg}" >
+	    <p>URL: <input type="text"  th:field="*{message}" /></p>
+        <p><input type="submit" value="Submit"/></p>
+	</form>
+	<a th:href="@{/matches}">matches</a>
+	
+</body>
+
+</html>
+
