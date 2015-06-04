@@ -1,4 +1,4 @@
-package org.wonderland.dev.levi9.springboot.web;
+package org.wonderland.dev.levi9.springboot.web.model;
 
 public class SubmittedMessage {
 

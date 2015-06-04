@@ -1,4 +1,4 @@
-package org.wonderland.dev.levi9.springboot.web;
+package org.wonderland.dev.levi9.springboot.web.mock;
 
 public class PlacedBetAwayMock extends PlacedBetMock {
 	

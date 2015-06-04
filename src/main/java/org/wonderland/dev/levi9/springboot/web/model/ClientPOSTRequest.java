@@ -1,4 +1,4 @@
-package org.wonderland.dev.levi9.springboot.web;
+package org.wonderland.dev.levi9.springboot.web.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
