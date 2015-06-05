@@ -1,30 +1,50 @@
 package org.wonderland.dev.levi9.springboot.web.model;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+
 public class SubmittedMessage {
 
-	private String budget;
-	private String profit;
+	@NotNull
+    @Min(0)
+	private double budget;
+	
+	@NotNull
+    @Min(0)
+	private double profit;
+	
+	@NotNull
 	private String urls;
 	
 	public SubmittedMessage() {
 		
 	}
 
-	public String getBudget() {
+	
+
+	public double getBudget() {
 		return budget;
 	}
 
-	public void setBudget(String budget) {
+
+
+	public void setBudget(double budget) {
 		this.budget = budget;
 	}
 
-	public String getProfit() {
+
+
+	public double getProfit() {
 		return profit;
 	}
 
-	public void setProfit(String profit) {
+
+
+	public void setProfit(double profit) {
 		this.profit = profit;
 	}
+
+
 
 	public String getUrls() {
 		return urls;

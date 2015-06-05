@@ -73,7 +73,7 @@ body {
 						<div class="control-group">
 							<label class="control-label" for="textinput">Budget</label>
 							<div class="controls">
-								<input id="textinput" name="textinput" type="text"
+								<input id="textinput" name="textinput" type="number" pattern="[0-9]+([\.|,][0-9]+)?" step="0.01" min="0"
 									class="input-xlarge" th:field="*{budget}" />
 
 							</div>
@@ -84,7 +84,7 @@ body {
 							<label class="control-label" for="textinput2">Desired
 								profit</label>
 							<div class="controls">
-								<input id="textinput2" name="textinput2" type="text"
+								<input id="textinput2" name="textinput2" type="number" pattern="[0-9]+([\.|,][0-9]+)?" step="0.01" min="0"
 									class="input-xlarge" th:field="*{profit}" />
 
 							</div>

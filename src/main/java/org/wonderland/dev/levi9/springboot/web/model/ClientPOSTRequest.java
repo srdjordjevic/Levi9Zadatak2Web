@@ -25,8 +25,8 @@ public class ClientPOSTRequest {
 
 	public static ClientPOSTRequest submittedMessageToRequest(SubmittedMessage message) {
 		ClientPOSTRequest req = new ClientPOSTRequest();
-		req.setBudget(Double.parseDouble(message.getBudget()));
-		req.setProfit(Double.parseDouble(message.getProfit()));
+		req.setBudget(message.getBudget());
+		req.setProfit(message.getProfit());
 		String[] urlsArray = message.getUrls().split(",");
 		req.setServicesUrls(Arrays.asList(urlsArray));
 		return req;
